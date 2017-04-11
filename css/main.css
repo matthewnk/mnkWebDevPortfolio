@@ -28,6 +28,8 @@ html {
 
 .logo img{
   margin: 10px 0px 0px 200px;
+  position: fixed;
+  top: 7px;
   /*z-index: 100;*/
 }
 
@@ -38,6 +40,9 @@ html {
   height: 100px;
   margin-left: 0px;
   box-shadow: 0px 0px 15px #888888;
+  position: fixed;
+  top: 100px;
+  z-index: 12;
 }
 
 .titleStrip h1 {
@@ -61,6 +66,10 @@ html {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15%;
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  z-index: 10;
 }
 
 .topNav li {
@@ -72,8 +81,8 @@ html {
   margin: 1px;
   height: 140px;
   min-width: 6em;
-  background-color: #969a13;
-  box-shadow: 7px -7px 0px #9facab;
+  background-color: #9facab;
+  box-shadow: 7px -7px 0px #f7ff04;
   text-align: center;
   font-size: 17px;
 }
