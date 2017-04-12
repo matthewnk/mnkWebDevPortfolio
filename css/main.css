@@ -1,13 +1,10 @@
 /* color reference 
 
-  #30302F - dark Grey
-  #B8BFB8 - grey
-  #FFD464 - yellow
-  #F26964 - red
-  #ec2821 - dark red
-  #E8FAE8 - green
-  #0F6470 - blue
+  #362f2d - dark brown  
+  #37b0c9 - blue
   #9facab - dim blue
+  #ffff33 - yellow
+  #969a13 - green
 
 */
 
@@ -28,24 +25,30 @@ html {
 
 .logo img{
   margin: 10px 0px 0px 200px;
+  padding: 0px;
   position: fixed;
   top: 7px;
-  /*z-index: 100;*/
+  left: 0px;
+  z-index: 100;
 }
 
 .titleStrip {
   background: white;
-  opacity: .9;
+  opacity: .92;
   width: 100%;
   height: 100px;
   margin-left: 0px;
-  box-shadow: 0px 0px 15px #888888;
+  box-shadow: 0px 0px 3px #696969;
   position: fixed;
+  left: 0px;
   top: 100px;
   z-index: 12;
 }
 
 .titleStrip h1 {
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  color: #362f2d;
   font-size: 4em;
   margin: 0px 0px 0px 200px;
   padding: 15px 0px 0px 0px;
@@ -81,20 +84,45 @@ html {
   margin: 1px;
   height: 140px;
   min-width: 6em;
-  background-color: #9facab;
-  box-shadow: 7px -7px 0px #f7ff04;
+  background-color: #37b0c9;
+  /*box-shadow: 7px -7px 0px #37b0c9;*/
   text-align: center;
   font-size: 17px;
 }
 
 .topNav li a {
+  position: relative;
+  top: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   text-decoration: none;
-  font-family: sans-serif;
-  color: #f7ff04;
+  color: #ffff33;
 }
 
 li.active {
   /*background-color: red;*/
 }
 
+.contentPanel {
+  left: 0px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  opacity: .8;
+  width: 100%;
+  height: 320px;
+  top: 250px;
+}
+
+.article {
+  color: white;
+  position: inherit;
+  left: 200px;
+
+}
+
+.article p::first-line {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ffff33;
+}
 
