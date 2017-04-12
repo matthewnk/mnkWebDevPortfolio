@@ -11,12 +11,13 @@
 body {
   color: #9facab;
   font-family: advent-pro, sans-serif;
+  background-color: #9facab;
   /*margin-left: 200px;*/ 
 }
 
 
 html { 
-  background: url("../images/background-1.jpg") no-repeat center center fixed; 
+  background: url("../images/background-1.jpg") no-repeat fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -114,15 +115,32 @@ li.active {
 }
 
 .article {
-  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
   position: inherit;
   left: 200px;
+  max-width: 1040px;
 
 }
 
-.article p::first-line {
+.article h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   color: #ffff33;
+  margin: 0 5px 0 0;
+  line-height: 17px;
+  float: left;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  background-color: #969a13;
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
 
