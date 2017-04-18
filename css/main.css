@@ -109,22 +109,18 @@ body {
   z-index: 11;
   width: 500px;
   left: 50%;
-  top: 85px;
+  top: 70px;
 }
 
 .topNav ul{
   list-style: none;
   height: 400px;
   width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15%;
   position: absolute;
 }
 
 .topNav li {
   position: relative;
-  top: -15px;
   float: left;
   display: block;
   opacity: .85;
@@ -132,9 +128,9 @@ body {
   height: 140px;
   min-width: 6em;
   background-color: #37b0c9;
-  /*box-shadow: 7px -7px 0px #37b0c9;*/
   text-align: center;
   font-size: 17px;
+  padding: 0 .5em;
 }
 
 .topNav li a {
