@@ -240,7 +240,7 @@ li.active {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  /*background-color: #efefef;*/
+  background-color: rgba(0, 0, 0, .2);
   text-align: center;
   width: 100%;
   z-index: 100;
