@@ -54,17 +54,7 @@ body {
   /*margin-left: 200px;*/ 
 }
 
-.hero {
-  width: 100%;
-  background-image: url(../images/heroImage_1-2.jpg);
-  background-size: auto 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
 .heroImage {
-  width: 1440px;
-  margin: 0 auto;
   /*z-index: 1;
   position: absolute;
   margin: 0px;
@@ -75,18 +65,13 @@ body {
 
 .heroImage img {
   z-index: 1;
-  width: 100%;
-  /*position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;*/
-  /*margin: 0px;
+  position: absolute;
+  margin: 0px;
   padding: 0px;
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;*/
+  height: auto;
 }
 
 
