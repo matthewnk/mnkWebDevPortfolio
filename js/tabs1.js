@@ -4,13 +4,27 @@ function appendContentHeader() {
   });
 }
 
+// function tabAnimation() {
+//   $("li").hover(function(){
+//         $(this).animate({top: '-40px'}, 200);
+//     }, function() {
+//       $(this).animate({top:'-15px', opacity: '.85'}, 200);
+//     });
+// }
+
 function tabAnimation() {
   $("li").hover(function(){
-        $(this).animate({top: '-40px', opacity: '1'}, 200);
+        $(this).animate({top: '-40px'}, 200);
     }, function() {
-      $(this).animate({top:'-15px', opacity: '.85'}, 200);
+      $(this).animate({top:'0px', opacity: '.85'}, 200);
     });
 }
+
+// function tabAnimation() {
+//   $("li").hover(function(){
+//         $(this).animate({top: 'toggle'});
+//   });
+// }
 
 function activeTab() {
   $("li").mouseover(function() {
