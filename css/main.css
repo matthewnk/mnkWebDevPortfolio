@@ -146,7 +146,7 @@ body {
   position: relative;
   top: 3px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   color: white;
 }
@@ -179,7 +179,11 @@ li.active a {
   top: 1em;
   max-width: 1040px;
   margin-right: 200px;
+  visibility: hidden;
+}
 
+.article.active {
+  visibility: visible;
 }
 
 .article h3 {

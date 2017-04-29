@@ -42,44 +42,58 @@ function preventClickDefault() {
 }
 
 function linkTabAndArticle() {
-  $("#tab1").mouseover(function() {
-    $("#article1").addClass("active");
-  });
-  $("#tab1").mouseout(function() {
+  $(".tabs").mouseover(function() {
     $("#article1").removeClass("active");
   });
-
-  $("#tab2").mouseover(function() {
+// FIRST TAB..................................
+  $("#tab1").mouseover(function() {
+    $("#article1").removeClass("active");
     $("#article2").addClass("active");
-    $("#article2").css("background-color", "#f26522");
+  });
+  $("#tab1").mouseout(function() {
+    $("#article2").removeClass("active");
+    $("#article1").addClass("active");
+  });
+
+// SECOND TAB..................................
+  $("#tab2").mouseover(function() {
+    $("#article1").removeClass("active");
+    $("#article3").addClass("active");
   });
   $("#tab2").mouseout(function() {
-    $("#article2").removeClass("active");
+    $("#article3").removeClass("active");
+    $("#article1").addClass("active");
   });
 
+// THIRD TAB..................................
   $("#tab3").mouseover(function() {
-    $("#article3").addClass("active");
-    $("#article3").css("background-color", "#669933");
+    $("#article1").removeClass("active");
+    $("#article4").addClass("active");
   });
   $("#tab3").mouseout(function() {
-    $("#article3").removeClass("active");
+    $("#article4").removeClass("active");
+    $("#article1").addClass("active");
   });
 
+// FOURTH TAB..................................
   $("#tab4").mouseover(function() {
-    $("#article4").addClass("active");
-    $("#article4").css("background-color", "#362f2d");
+    $("#article1").removeClass("active");
+    $("#article5").addClass("active");
   });
   $("#tab4").mouseout(function() {
-    $("#article4").removeClass("active");
+    $("#article5").removeClass("active");
+    $("#article1").addClass("active");
   });
 
-  $("#tab5").mouseover(function() {
-    $("#article5").addClass("active");
-    $("#article5").css("background-color", "#669933");
-  });
-  $("#tab5").mouseout(function() {
-    $("#article5").removeClass("active");
-  });
+// FIFTH TAB..................................
+  // $("#tab2").mouseover(function() {
+  //   $("#article1").removeClass("active");
+  //   $("#article6").addClass("active");
+  // });
+  // $("#tab2").mouseout(function() {
+  //   $("#article6").removeClass("active");
+  //   $("#article1").addClass("active");
+  // });
 }
 
 function getHref() {
