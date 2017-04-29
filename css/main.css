@@ -138,6 +138,8 @@ body {
   text-align: center;
   font-size: 17px;
   padding: 0 .5em;
+  border-radius: 15px 0px;
+  cursor: pointer;
 }
 
 .topNav li a {

@@ -14,9 +14,9 @@ function appendContentHeader() {
 
 function tabAnimation() {
   $("li").hover(function(){
-        $(this).animate({top: '-40px'}, 200);
+        $(this).animate({top: '-40px'}, {easing: 'swing', duration: 250});
     }, function() {
-      $(this).animate({top:'0px', opacity: '.85'}, 200);
+      $(this).animate({top:'0px'}, 200);
     });
 }
 
@@ -92,8 +92,16 @@ function getHref() {
   });
 }
 
+// function divClick() {
+//   $(".tab").click(function() {
+//     window.location = $(this).find("a").attr("href"); 
+//     return false;
+//   });
+// }
+
 $(document).ready(function(){
-  appendContentHeader()
+  // divClick();
+  appendContentHeader();
   tabAnimation();
   activeTab();
   preventClickDefault();
