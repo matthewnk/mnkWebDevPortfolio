@@ -41,48 +41,48 @@ function preventClickDefault() {
    }); 
 }
 
-function linkTabAndArticle() {
-  $(".tabs").mouseover(function() {
+function hideShowArticle1() {
+  $(".tab").mouseover(function() {
     $("#article1").removeClass("active");
   });
+  $(".tabs1").mouseout(function() {
+    $("#article1").addClass("active");
+  });
+}
+
+function linkTabAndArticle() {
+  
+
 // FIRST TAB..................................
   $("#tab1").mouseover(function() {
-    $("#article1").removeClass("active");
     $("#article2").addClass("active");
   });
   $("#tab1").mouseout(function() {
     $("#article2").removeClass("active");
-    $("#article1").addClass("active");
   });
 
 // SECOND TAB..................................
   $("#tab2").mouseover(function() {
-    $("#article1").removeClass("active");
     $("#article3").addClass("active");
   });
   $("#tab2").mouseout(function() {
     $("#article3").removeClass("active");
-    $("#article1").addClass("active");
   });
 
 // THIRD TAB..................................
   $("#tab3").mouseover(function() {
-    $("#article1").removeClass("active");
     $("#article4").addClass("active");
   });
   $("#tab3").mouseout(function() {
     $("#article4").removeClass("active");
-    $("#article1").addClass("active");
   });
 
 // FOURTH TAB..................................
   $("#tab4").mouseover(function() {
-    $("#article1").removeClass("active");
     $("#article5").addClass("active");
   });
   $("#tab4").mouseout(function() {
     $("#article5").removeClass("active");
-    $("#article1").addClass("active");
   });
 
 // FIFTH TAB..................................
@@ -106,15 +106,8 @@ function getHref() {
   });
 }
 
-// function divClick() {
-//   $(".tab").click(function() {
-//     window.location = $(this).find("a").attr("href"); 
-//     return false;
-//   });
-// }
-
 $(document).ready(function(){
-  // divClick();
+  hideShowArticle1()
   appendContentHeader();
   tabAnimation();
   activeTab();

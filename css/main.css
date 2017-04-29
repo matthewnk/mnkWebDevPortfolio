@@ -114,7 +114,6 @@ body {
 .topNav {    
   position: absolute;
   z-index: 11;
-  width: 500px;
   left: 50%;
   top: 70px;
 }
@@ -129,7 +128,8 @@ body {
 .topNav li {
   position: relative;
   float: left;
-  display: block;
+  display: inline-block;
+  /*display: block;*/
   opacity: .85;
   margin: 1px;
   height: 140px;
