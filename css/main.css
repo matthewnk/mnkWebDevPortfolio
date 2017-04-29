@@ -148,11 +148,15 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-decoration: none;
-  color: #ffff33;
+  color: white;
 }
 
-li.active {
-  /*background-color: red;*/
+/*.topNav li a:hover {
+  color: white;
+}*/
+
+li.active a {
+  color: #ffff33;
 }
 
 .contentPanel {

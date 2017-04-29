@@ -16,7 +16,7 @@ function tabAnimation() {
   $("li").hover(function(){
         $(this).animate({top: '-40px'}, {easing: 'swing', duration: 250});
     }, function() {
-      $(this).animate({top:'0px'}, 200);
+      $(this).animate({top:'0px'}, 375);
     });
 }
 
@@ -28,9 +28,9 @@ function tabAnimation() {
 
 function activeTab() {
   $("li").mouseover(function() {
-    $("li").addClass('active');
+    $(this).addClass('active');
   });
-  $("li").mouseout(function() {
+  $(this).mouseout(function() {
     $("li").removeClass('active');
   });
 }
