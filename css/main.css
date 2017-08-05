@@ -195,14 +195,6 @@ li.active a {
   float: left;
 }
 
-.downArrow {
-  width: 150px;
-  position: relative;
-  align-content: center;
-  margin: 0 auto;
-  top: 66%;
-}
-
 .container {
   position: absolute;
   top: 730px;
@@ -299,5 +291,26 @@ li.active a {
 
 .mainFooter .mainFooterLogo img{
   float: left;
+}
+
+@keyframes arrowDown {
+  0% {
+    transform: translateY(1px);
+  } 
+  100% {
+    transform: translateY(15px);
+  }
+ } 
+
+.downArrow {
+  animation-name: arrowDown;
+  animation-duration: 1s;
+  width: 150px;
+  position: relative;
+  align-content: center;
+  margin: 0 auto;
+  top: 66%;
+}
+
 }
 
